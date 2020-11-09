@@ -1,0 +1,15 @@
+{
+  "extends": "react-app",
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "sort-keys": [
+      2,
+      "asc",
+      {
+        "caseSensitive": false,
+        "natural": true
+      }
+    ]
+  }
+}
