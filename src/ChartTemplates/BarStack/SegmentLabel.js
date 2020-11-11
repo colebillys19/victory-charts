@@ -21,7 +21,7 @@ const SegmentLabel = (props) => {
       TransitionProps={{ timeout: 0 }}
       valueA={yVal}
       valueB={percentage}
-      verticalOffset="2px"
+      verticalOffset="-1px"
     >
       <g>
         <VictoryLabel
