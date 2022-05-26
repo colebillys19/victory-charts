@@ -2,9 +2,16 @@ import styled from 'styled-components';
 import { Tooltip } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 
+export const ChartContent = styled.div`
+  padding: 14px;
+  position: relative;
+  right: 16px;
+  top: 8px;
+`;
+
 export const ChartWrapper = styled.div`
   background-color: white;
-  height: 273px;
+  height: 300px;
   margin: 30px 30px;
   outline: 1px solid grey;
   width: 1100px;
