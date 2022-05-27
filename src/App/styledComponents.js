@@ -20,10 +20,13 @@ export const FlexContainer = styled.div`
 `;
 
 export const SelectMenuContainer = styled.div`
+  display: flex;
   height: 40px;
+  justify-content: center;
   left: 20px;
   position: absolute;
   top: 20px;
+  width: calc(100vw - 40px);
 `;
 
 export const StyledInputLabel = styled(InputLabel)`
