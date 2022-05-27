@@ -4,34 +4,27 @@ import { InputLabel, Select } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 export const AppContainer = styled.div`
-  height: 100vh;
-  min-height: 700px;
   min-width: 1200px;
-  position: relative;
-  width: 100vw;
+  padding-top: 40px;
 `;
 
-export const FlexContainer = styled.div`
+export const AppSubcontainer = styled.div`
   align-items: center;
   display: flex;
-  height: 100%;
-  justify-content: center;
-  width: 100%;
+  flex-direction: column;
 `;
 
 export const SelectMenuContainer = styled.div`
   display: flex;
   height: 40px;
   justify-content: center;
-  left: 20px;
-  position: absolute;
-  top: 20px;
-  width: calc(100vw - 40px);
 `;
 
 export const StyledInputLabel = styled(InputLabel)`
+  color: #fff !important;
   display: inline-block !important;
-  font-size: 14px !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
   margin-right: 10px !important;
   position: relative;
   top: 13px;
@@ -46,7 +39,7 @@ export const StyledSelect = styled((props) => (
     {...props}
     MenuProps={{
       classes: {
-        paper: makeStyles({ select: { '& li': { fontSize: '14px' } } })()
+        paper: makeStyles({ select: { '& li': { fontSize: '16px' } } })()
           .select,
       },
     }}
@@ -59,7 +52,7 @@ export const StyledSelect = styled((props) => (
     border-color: grey !important;
   }
   & .MuiInputBase-input {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
   & .MuiSelect-select:focus {
     background-color: transparent !important;

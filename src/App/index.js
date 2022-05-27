@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import SelectMenu from './SelectMenu';
 import { chartDict } from './constants';
-import { AppContainer, FlexContainer } from './styledComponents';
+import { AppContainer, AppSubcontainer } from './styledComponents';
 
 const App = () => {
   // string passed here determines which chart shows on page load (refer to chartDict constant)
@@ -10,8 +10,10 @@ const App = () => {
 
   return (
     <AppContainer className="App">
-      <SelectMenu activeChart={activeChart} setActiveChart={setActiveChart} />
-      <FlexContainer>{chartDict[activeChart]}</FlexContainer>
+      <AppSubcontainer>
+        <SelectMenu activeChart={activeChart} setActiveChart={setActiveChart} />
+        {chartDict[activeChart]}
+      </AppSubcontainer>
     </AppContainer>
   );
 };

@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const ChartWrapper = styled.div`
   background-color: white;
-  margin: 30px 30px;
-  outline: 1px solid grey;
+  margin: 40px;
   width: 800px;
 `;
