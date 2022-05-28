@@ -8,7 +8,10 @@ import { ChartWrapper } from '../styledComponents';
 
 const BarHorizontal = () => (
   <ChartWrapper>
-    <VictoryChart domainPadding={{ x: 25 }}>
+    <VictoryChart
+      domainPadding={{ x: 25 }}
+      padding={{ bottom: 46, left: 54, right: 36, top: 30 }}
+    >
       <VictoryBar data={data} horizontal />
       <VictoryAxis style={{ ticks: { size: 4, stroke: '#000' } }} />
       <VictoryAxis

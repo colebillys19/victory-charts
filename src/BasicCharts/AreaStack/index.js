@@ -9,7 +9,7 @@ import { ChartWrapper } from '../styledComponents';
 
 const AreaStack = () => (
   <ChartWrapper>
-    <VictoryChart>
+    <VictoryChart padding={{ bottom: 46, left: 54, right: 42, top: 46 }}>
       <VictoryStack>
         <VictoryArea data={dataA} style={{ data: { fill: '#333' } }} />
         <VictoryArea data={dataB} style={{ data: { fill: '#888' } }} />

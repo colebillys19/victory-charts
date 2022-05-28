@@ -65,7 +65,7 @@ const PieHollow = ({ data: { pieData, totalCount } }) => {
           height={140}
           innerRadius={52}
           labelComponent={<SliceLabel />}
-          padding={0}
+          padding={5}
           standalone={false}
           width={140}
         />

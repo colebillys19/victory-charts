@@ -9,7 +9,10 @@ import { ChartWrapper } from '../styledComponents';
 
 const BarGrouped = () => (
   <ChartWrapper>
-    <VictoryChart domainPadding={{ x: 25 }}>
+    <VictoryChart
+      domainPadding={{ x: 25 }}
+      padding={{ bottom: 46, left: 50, right: 32, top: 46 }}
+    >
       <VictoryGroup offset={12}>
         <VictoryBar data={data.barA} />
         <VictoryBar data={data.barB} />

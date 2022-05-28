@@ -8,7 +8,10 @@ import { ChartWrapper } from '../styledComponents';
 
 const MultiLine = () => (
   <ChartWrapper>
-    <VictoryChart domainPadding={{ x: 15 }}>
+    <VictoryChart
+      domainPadding={{ x: 15, y: 2 }}
+      padding={{ bottom: 40, left: 55, right: 25, top: 40 }}
+    >
       <VictoryLine
         data={dataC}
         labels={({ datum: { y } }) => y}

@@ -9,7 +9,10 @@ import { ChartWrapper } from '../styledComponents';
 
 const BarHorizontalStackNegative = () => (
   <ChartWrapper>
-    <VictoryChart domainPadding={{ x: 25 }}>
+    <VictoryChart
+      domainPadding={{ x: 25 }}
+      padding={{ bottom: 44, left: 36, right: 36, top: 28 }}
+    >
       <VictoryStack horizontal>
         <VictoryBar data={data.barA} />
         <VictoryBar data={data.barB} />

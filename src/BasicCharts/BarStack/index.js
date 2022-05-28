@@ -9,7 +9,10 @@ import { ChartWrapper } from '../styledComponents';
 
 const BarStack = () => (
   <ChartWrapper>
-    <VictoryChart domainPadding={{ x: 25 }}>
+    <VictoryChart
+      domainPadding={{ x: 25 }}
+      padding={{ bottom: 46, left: 60, right: 40, top: 40 }}
+    >
       <VictoryStack>
         <VictoryBar data={data.barA} />
         <VictoryBar data={data.barB} />

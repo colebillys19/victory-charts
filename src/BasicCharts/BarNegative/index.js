@@ -8,7 +8,10 @@ import { ChartWrapper } from '../styledComponents';
 
 const BarNegative = () => (
   <ChartWrapper>
-    <VictoryChart domainPadding={{ x: 25 }}>
+    <VictoryChart
+      domainPadding={{ x: 25 }}
+      padding={{ bottom: 40, left: 60, right: 40, top: 40 }}
+    >
       <VictoryBar data={data} standalone={false} />
       <VictoryAxis style={{ ticks: { size: 4, stroke: '#000' } }} />
       <VictoryAxis

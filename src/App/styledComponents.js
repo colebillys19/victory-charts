@@ -14,6 +14,13 @@ export const AppSubcontainer = styled.div`
   flex-direction: column;
 `;
 
+export const ChartContainer = styled.div`
+  background-color: white;
+  box-shadow: 4px 4px 0 rgba(255, 255, 255, 0.5);
+  margin-top: 40px;
+  padding: ${({ paddingVal }) => paddingVal};
+`;
+
 export const SelectMenuContainer = styled.div`
   display: flex;
   height: 40px;
